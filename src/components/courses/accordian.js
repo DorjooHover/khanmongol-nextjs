@@ -15,7 +15,7 @@ export const AccordionsItem = ({data}) => {
                 </AccordionButton>
                 </h2>
                 <AccordionPanel pb={4}>
-                    {data.map((item) => <Lesson index={item}/>)}
+                    {data.map((item, index) => <Lesson index={item} key={index}/>)}
                 </AccordionPanel>
             </AccordionItem>
 
