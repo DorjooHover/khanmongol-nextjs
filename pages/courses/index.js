@@ -9,8 +9,8 @@ export default function Courses() {
     return (
         <VStack>
             <Grid templateColumns='repeat(3, 1fr)' gap={6} maxW={'1170px'} w={'100%'} pt={20}>
-                {pages.slice(0,views).map((item) => (
-                    <MainCourse/>
+                {pages.slice(0,views).map((item, index) => (
+                    <MainCourse key={index}/>
                 ))}
             </Grid>
             {views == 3 && (
