@@ -2,12 +2,12 @@ import { Avatar, Button, Divider, GridItem, HStack, Image, Link, Text, VStack } 
 import { Title } from "../mainTitle"
 import {ChevronRightIcon} from '@chakra-ui/icons'
 import { useRouter } from "next/router"
-export const MainCourse = ({key}) => {
+export const MainCourse = () => {
     const text = 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat'
     const router = useRouter()
    
     return (
-        <GridItem transition={'0.3s'} _hover={{boxShadow:'0 5px 20px -8px rgba(0, 0, 0, .5)', transition: '0.3s'}} justifyContent='center' alignItems={'center'} p={4} cursor='pointer' onClick={() => router.push(`/${router.pathname}/0`)} key={key}>
+        <GridItem transition={'0.3s'} _hover={{boxShadow:'0 5px 20px -8px rgba(0, 0, 0, .5)', transition: '0.3s'}} justifyContent='center' alignItems={'center'} p={4} cursor='pointer' onClick={() => router.push(`/${router.pathname}/0`)} >
             <Image src="https://kamleshyadav.com/wp/traininginstitute/academic/wp-content/uploads/sites/3/2017/05/1-330x220.jpg" w={'100%'} mb={4}/>
             <Title text={'Javascript campus'} size={'20px'}/>
             <Divider my={3}/>

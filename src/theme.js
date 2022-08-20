@@ -32,7 +32,10 @@ const theme = extendTheme({
         },
         bg: {
             gray: '#f7f7f7',
-            purple: '#442e66'
+            purple: '#442e66',
+            linearOrange: 'linear-gradient(to right, #f5ce62, #e43603, #fa7199, #e85a19)',
+            linearYellow: 'linear-gradient( -145deg, rgb(253,200,48) 50%, rgb(243,115,53) 75%)',
+            black: '#222'
         }
         
     }

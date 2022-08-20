@@ -1,7 +1,7 @@
 import { RepeatClockIcon, StarIcon } from "@chakra-ui/icons";
 import { Avatar, Box, Button, Container, Flex, Heading, HStack, Icon, Image, Link, Tab, TabList, TabPanel, TabPanels, Tabs, Text, VStack } from "@chakra-ui/react";
-import { Curriculum, Overview } from "../../src/components/courses/tabs";
-import { Title } from "../../src/components/mainTitle";
+import { Curriculum, Overview } from "../../../src/components/courses/tabs";
+import { Title } from "../../../src/components/mainTitle";
 
 export default function Course() {
     return (

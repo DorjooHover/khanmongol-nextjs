@@ -5,7 +5,7 @@ export const AccordionsItem = ({data}) => {
     
     return (
 
-            <AccordionItem>
+            <AccordionItem >
                 <h2>
                 <AccordionButton>
                     <Box flex='1' textAlign='left'>

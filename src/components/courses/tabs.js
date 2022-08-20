@@ -1,6 +1,7 @@
 import { Accordion, AccordionButton, AccordionIcon, AccordionItem, AccordionPanel, Box, Button, Center, Flex, HStack, Input, Text, Textarea, VStack } from "@chakra-ui/react"
 import { Title } from "../mainTitle"
 import { AccordionsItem } from "./accordian"
+import AnimatedButton from '../button'
 const lessons = [1,2,3,4,5]
 const quizzes = [1,2,3]
 export const Overview = () => {
@@ -18,7 +19,7 @@ export const Overview = () => {
                     <Input placeholder="Website URL"/>
                 </HStack>
 
-                <Button px={4} color={'white'} transition="0.3s" boxShadow={'0 4px 15px 0 rgba(229, 66, 10, 0.75)'} backgroundSize={'300% 100%'} borderRadius={'50px'} bg="linear-gradient(to right, #f5ce62, #e43603, #fa7199, #e85a19)" _hover={{bgPos:'100% 0', transition: '0.3s'}} >Post Comment</Button>
+                <AnimatedButton text={'post comment'}/>
 
             </Box>
         </VStack>
@@ -27,7 +28,7 @@ export const Overview = () => {
 
 export const Curriculum = () => {
     return (
-        <Accordion defaultIndex={[0]} allowMultiple>
+        <Accordion px={0} defaultIndex={[0]} allowMultiple >
             <AccordionsItem data={lessons}/>
             <AccordionsItem data={quizzes}/>
         </Accordion>
