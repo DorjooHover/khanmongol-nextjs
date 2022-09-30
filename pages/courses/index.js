@@ -22,6 +22,7 @@ export default function Courses() {
                 <AnimatedButton func={show} text={'view more'}/>
             </Center>   
             )}
+
             <ChooseUs/>
         </VStack>
     )

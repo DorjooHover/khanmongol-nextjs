@@ -1,13 +1,14 @@
 import Navbar from "./navbar";
-import {Center} from '@chakra-ui/react'
+
 import Footer from "./footer";
 
-export default function Layout({children}) {
+
+export default function Layout({children, user}) {
+   
     return (
         <>
 
-                <Navbar/>
-
+            <Navbar user={user}/>
             <main>{children}</main>
             <Footer/>
         </>
