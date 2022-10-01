@@ -60,8 +60,8 @@ const LessonLevel = () => {
                          <InputLeftElement
                               focusBorderColor="text.icon"
                               pointerEvents="none"
-                              children={<SearchIcon color="gray.300" />}
-                         />
+
+                         ><SearchIcon color="gray.300" /></InputLeftElement>
                          <Input
                               variant="flushed"
                               placeholder="Түвшинг нэрээр хайх"
