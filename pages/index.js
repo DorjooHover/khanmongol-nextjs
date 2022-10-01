@@ -38,6 +38,9 @@ export default function Home() {
     phone: undefined,
     type: "",
   });
+  const [category, setCategory] = useState([])
+
+  const url = process.env.url || 'https://khanmongol.herokuapp.com/'
   const handleSubmit = async (e) => {
     e.preventDefault()
     const form = {
@@ -67,25 +70,13 @@ export default function Home() {
     data.phone === "" ||
     data.type === "";
 
-    const test = async () => {
-      try {
-        const res = await axios.post('https://khanmongol.herokuapp.com/v1/lesson', {
-     
-          "name": "asasdfasdfasdfasdf",
-          "category": "62f7788cd193dcbc95c51f2a",
-          "videoUrl": "asdf",
-          "description": "asdfasdf",
-          "level": "62f7788cd193dcbc95c51f2a",
-          "teacher": "62f7788cd193dcbc95c51f2a"
-        
-      })
-      console.log(res)
-      } catch(err) {
-        console.log(err)
-      }
-    }
+  const getData = async () => {
+    const categoryRes = await axios.get(`${url}category`)
+    setCategory(categoryRes.data)
+    console.log(categoryRes.data)
+  }
   useEffect(() => {
-    
+    getData()
   },[]);
   return (
     <VStack>
