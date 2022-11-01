@@ -103,10 +103,10 @@ export default function Navbar({user}) {
             <Link color={"#fff"} fontWeight="600" href="/about">
               About Us
             </Link>
-            <Link color={"#fff"} fontWeight="600" href="courses">
+            <Link color={"#fff"} fontWeight="600" href="/courses">
               Courses
             </Link>
-            <Link color={"#fff"} fontWeight="600" href="contact">
+            <Link color={"#fff"} fontWeight="600" href="/contact">
               Contact
             </Link>
             <>
